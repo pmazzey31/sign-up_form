@@ -1,2 +1,2 @@
-const myForm = document.querySelector(".form_container");
-myForm.noValidate = true;
+const myform = document.getElementById('myform');
+myform.noValidate = true;

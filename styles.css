@@ -112,20 +112,20 @@ input {
     margin-top: 3px;
 }
 
-input:focus {
+input:focus, input:focus-within {
     outline: none;
     border: 3px solid #30B3DB;
 }
 
-input:invalid{
+/* input:valid {
     outline: none;
-    border-color: #ff0000;
+    border-color: #12e924;
 }
 
-input:valid {
+input:invalid {
     outline: none;
-    border-color: #10ca1f;
-}
+    border-color: #ff0000;
+} */
 
 .submit-button {
     background: #30B3DB;
