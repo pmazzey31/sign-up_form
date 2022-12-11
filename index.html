@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Six+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>HighTech - Create New Account</title>
+</head>
+<body>
+    <div class="picture_container">
+        <div class="logo_container">
+            <p class="logo">HighTech</p>
+        </div>
+    </div>
+
+    <div class="main_container">
+        <div class="content_container">
+            <p class="logo form_logo">HighTech</p>
+            <h1 class="title">Create a new account</h1>
+            <p class="subtitle">It's quick and easy.</p>
+            <h2 class="form_subtitle">Let's do this</h2>
+            <form action="#" method="post" class="form_container" novalidate>
+        
+                <div class="input_container">
+                    <label for="first_name">First name*</label>
+                    <input type="text" name="first_name" id="first_name" maxlength="30" required>
+                </div>
+        
+        
+                <div class="input_container">
+                    <label for="last_name">Last name*</label>
+                    <input type="text" name="last_name" id="last_name" maxlength="30" required>
+                </div>
+        
+        
+                <div class="input_container">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                </div>
+        
+                <div class="input_container">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
+                </div>
+        
+                <div class="input_container">
+                    <label for="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">Password*</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+        
+                <div class="input_container">
+                    <label for="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">Confirm password*</label>
+                    <input type="password" name="confirm_password" id="confirm_password" required>
+                </div>
+        
+                <button type="submit" class="submit-button">Create account</button>
+                <p class="log_in">Already have an account? <a href="#">Log in</a></p>
+        
+            </form>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
